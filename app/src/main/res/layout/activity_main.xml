@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:contentDescription="Myfirstvote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coke"
+            ></ImageView>
+        <TextView
+            android:id="@+id/textone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textSize="60sp"
+            android:layout_margin="10dp"
+
+            ></TextView>
+        <Button
+            android:id="@+id/bvote1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to vote"
+
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:contentDescription="Mysecondvote"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:src="@drawable/pepsi"
+            ></ImageView>
+        <TextView
+            android:id="@+id/texttwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="10dp"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            ></TextView>
+        <Button
+            android:id="@+id/bvote2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to vote"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>
